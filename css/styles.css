@@ -1,0 +1,32 @@
+html {
+    font-size: 62.5%;
+}
+:root {
+    --accentText: blue;
+}
+.outer-box {
+    border: 2px solid black;
+    max-width: 35%;
+    height: 55vh;
+    margin: 8em auto 0 auto;
+    border-radius: 1.5rem;
+}
+h1 {
+    border: 1px solid brown;
+    max-width: fit-content;
+    font-size: 1.5rem;
+    color: var(--accentText);
+
+}
+.advice-box {
+    border: solid 1px blue;
+    width: 40%;
+    height: 150px;
+    margin-top: 2em;
+}
+.directions {
+    color: var(--accentText);
+}
+label {
+    color: var(--accentText);
+}
