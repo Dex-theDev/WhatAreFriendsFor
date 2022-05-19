@@ -5,28 +5,64 @@ html {
     --accentText: blue;
 }
 .outer-box {
-    border: 2px solid black;
-    max-width: 35%;
-    height: 55vh;
+    border: 2px solid rgba(197, 158, 158, 0.623);
+    max-width: 40%;
+    height: 295px;
     margin: 8em auto 0 auto;
     border-radius: 1.5rem;
+    -webkit-box-shadow: 1px 0px 20px -6px #000000; 
+     box-shadow: 1px 0px 20px -6px #000000;
+
 }
 h1 {
-    border: 1px solid brown;
+    
     max-width: fit-content;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--accentText);
-
+    margin-left: .75em;
+    font-family: 'Signika Negative', sans-serif;
 }
 .advice-box {
     border: solid 1px blue;
-    width: 40%;
+    width: 93%;
     height: 150px;
     margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
 }
 .directions {
     color: var(--accentText);
+    font-family: 'Signika Negative', sans-serif;
+    max-width: fit-content;
+    font-size: 1.5rem;
+}
+.directions-text{
+    font-family: 'Signika Negative', sans-serif;
+    max-width: fit-content;
+    font-size: 1.5rem;
 }
 label {
     color: var(--accentText);
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.25rem;
+    margin-left: .5em;
+}
+label, input {
+    display: block;
+}
+.input-box {
+    margin-left: .5rem;
+}
+.container > button {
+    display: inline-block;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-left: .5em;
+}
+ .directions, .directions-text, .container, .advice-box{
+    margin-left: 1em;
+}
+img.gif {
+    max-width: 30%;
 }
