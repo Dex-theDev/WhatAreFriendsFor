@@ -5,26 +5,21 @@
 
 // Create Variables for DOM Elements
 
-const query = document.querySelector('.input-box').value
 const button = document.querySelector('button')
 const textPlace = document.querySelector('.advice-text')
 
-
-button.addEventListener('click', () => {
-    getFetch()
-       .then(data => {
-           textPlace.textContent = data.slips[1].advice
-           console.log(data.slips[1].advice)
-       })
-       .catch(err => "Advice not found " + err)
-    })
+button.addEventListener('click',() => {
+    
+    getFetch().catch(err => `Advice not found: ${err}`)
+})
 
 
 const getFetch = async () => {
- 
-const response = await fetch(`https://api.adviceslip.com/advice/search/love`)
+   
+const query = await document.querySelector('.input-box').value
+const response = await fetch(`https://api.adviceslip.com/advice/search/${query}`)
 const data = await response.json()
-return data
-
+//return data
+textPlace.textContent = data.slips[0].advice
+console.log(data.slips[0].advice)
 }
-
